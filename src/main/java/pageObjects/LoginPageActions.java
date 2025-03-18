@@ -24,16 +24,28 @@ public class LoginPageActions {
     @FindBy(xpath = "//button[@data-pc-name='button']")
     WebElement authenticateButton;
 
+    @FindBy(xpath = "//button[@class='nav-link bg-transparent']")
+    WebElement logout;
+
 
     public LoginPageActions(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
+    public void login(String user, String pass) throws InterruptedException {
+        userName.sendKeys(user);
+        password.sendKeys(pass);
+        signIn.click();
+        authenticationCode.sendKeys("");
+        Thread.sleep(10000);
+        authenticateButton.click();
+        Thread.sleep(500);
+    }
+
     public void clearUsername() {
         userName.clear();
     }
-
     public void enterUsername(String user) {
         userName.sendKeys(user);
     }
@@ -59,6 +71,13 @@ public class LoginPageActions {
     }
 
     public void clickAuthenticateButton(){
-    authenticateButton.click();
+        authenticateButton.click();
     }
+
+    public void clickLogoutButton(){
+        logout.click();
+    }
+
+
+
 }

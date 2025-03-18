@@ -5,25 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="06d37b79-47a3-47f5-be20-9936e7d8c44b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPageActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utilities/ExtentReportManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/ExtentReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pageObjects/DashboardPageActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/DashboardTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPageActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/LoginPageActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utilities/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utilities/ExtentReportManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pageObjects/LoginPageActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pageObjects/LoginPageActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utilities/ExtentReportManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utilities/ExtentReportManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/ExtentReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2uIH4q7fjTGNX25Zcr3CtYGR4XN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -46,6 +59,9 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "TestNG.C:/Users/SumanaGhimire/Documents/GitHub/DiscoverAutomation/testng.xml.executor": "Run",
+    "TestNG.DashboardTests.executor": "Run",
+    "TestNG.LoginTests.executor": "Run",
+    "TestNG.LoginTests.testInvalidLogin.executor": "Run",
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
@@ -58,7 +74,7 @@
       <recent name="C:\Users\SumanaGhimire\Documents\GitHub\DiscoverAutomation" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.LoginTests.testInvalidLogin">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="DiscoverAutomation" />
       <method v="2">
@@ -70,6 +86,76 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="C:/Users/SumanaGhimire/Documents/GitHub/DiscoverAutomation/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumLoginTest" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumLoginTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.DashboardTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumLoginTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTests.testInvalidLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumLoginTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginTests" />
+      <option name="METHOD_NAME" value="testInvalidLogin" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginTests.testInvalidLogin" />
+        <item itemvalue="TestNG.LoginTests" />
+        <item itemvalue="TestNG.DashboardTests" />
+        <item itemvalue="TestNG.C:/Users/SumanaGhimire/Documents/GitHub/DiscoverAutomation/testng.xml" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -81,5 +167,16 @@
       <updated>1741928980231</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/LoginTests.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

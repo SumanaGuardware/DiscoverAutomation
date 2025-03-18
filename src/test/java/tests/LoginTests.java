@@ -1,4 +1,5 @@
 package tests;
+
 import base.BaseTest;
 import com.aventstack.extentreports.ExtentTest;
 import org.testng.Assert;
@@ -16,10 +17,12 @@ public class LoginTests extends BaseTest {
     public void setupTest() {
         loginPage = new LoginPageActions(driver);
     }
+
     @Test(priority = 1, description = "Invalid Login Test with invalid credentials")
     public void testInvalidLogin() throws InterruptedException {
         test = ExtentReportManager.startTest("Invalid Login Test");
         test.info("Starting Invalid Login Test");
+        loginPage.clickLogoutButton();
         loginPage.enterUsername("invalidUser@example.com");
         test.info("Entered invalid username");
         loginPage.enterPassword("WrongPassword");
@@ -57,13 +60,14 @@ public class LoginTests extends BaseTest {
         test.info("Starting Authentication Test");
         loginPage.enterAuthenticationCode("123455");
         loginPage.clearAuthenticationCode();
-        Thread.sleep(15000);
+        Thread.sleep(7000);
         loginPage.clickAuthenticateButton();
         Thread.sleep(2000);
         Assert.assertTrue(driver.getCurrentUrl().contains("landing"));
         test.info("Authentication successful");
         test.pass("Authentication successful");
     }
+
     @AfterMethod
     public void tearDownTest() {
         ExtentReportManager.endTest();
